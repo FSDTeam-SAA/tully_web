@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 
 export default function SecurityEthics() {
-  const brandColor = "#FDB03A"; // Centralized color for easy editing
+  const brandColor = "#FDB03A" // The signature orange
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -18,9 +18,17 @@ export default function SecurityEthics() {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   }
 
+  // Component for the dot at the end of the line
+  const TerminalDot = ({ position }: { position: 'left' | 'right' }) => (
+    <div 
+      className={`absolute top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full ${position === 'left' ? '-left-1' : '-right-1'}`}
+      style={{ backgroundColor: brandColor }}
+    />
+  )
+
   return (
     <section id="security" className="relative overflow-hidden bg-white py-14 md:py-28">
-      <div className="mx-auto max-w-[1200px] px-5 sm:px-6">
+      <div className="mx-auto max-w-[1250px] px-5 sm:px-6">
         
         {/* Header */}
         <div className="mb-10 text-center md:mb-20">
@@ -32,50 +40,53 @@ export default function SecurityEthics() {
           </p>
         </div>
 
-        {/* Responsive Grid System */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 items-center gap-10 md:grid-cols-[1fr_auto_1fr] md:gap-0"
+          className="grid grid-cols-1 items-center gap-12 md:grid-cols-[1.2fr_auto_1.2fr] md:gap-0"
         >
           
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-10 md:h-[400px] md:justify-between md:gap-0">
             {/* Top Left */}
-            <motion.div variants={itemVariants} className="group relative flex justify-center md:items-center md:justify-end">
-              <p className="z-10 mx-auto max-w-[340px] text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:mr-10 md:mx-0 md:max-w-none md:text-right lg:text-[16px]">
+            <div className="flex items-center justify-center md:justify-end gap-6">
+              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-right lg:text-[16px]">
                 AI supports planning never<br className="hidden md:block" /> completes academic work
               </p>
-              {/* Horizontal Line */}
-              <div className="hidden md:block absolute right-0 top-1/2 h-[2px] w-8 md:w-10" style={{ backgroundColor: brandColor }} />
-              {/* Vertical Connector */}
-              <div className="hidden md:block absolute right-0 top-1/2 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
-            </motion.div>
+              {/* Connector Container */}
+              <div className="hidden md:block relative w-24 lg:w-32">
+                <div className="relative h-[2px] w-full" style={{ backgroundColor: brandColor }}>
+                  <TerminalDot position="left" />
+                  {/* Vertical Line turns DOWN */}
+                  <div className="absolute right-0 top-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
+                </div>
+              </div>
+            </div>
 
             {/* Bottom Left */}
-            <motion.div variants={itemVariants} className="group relative flex justify-center md:items-center md:justify-end">
-              <p className="z-10 mx-auto max-w-[340px] text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:mr-10 md:mx-0 md:max-w-none md:text-right lg:text-[16px]">
+            <div className="flex items-center justify-center md:justify-end gap-6">
+              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-right lg:text-[16px]">
                 Designed to align with<br className="hidden md:block" /> educational integrity standards
               </p>
-              {/* Horizontal Line */}
-              <div className="hidden md:block absolute right-0 top-1/2 h-[2px] w-8 md:w-10" style={{ backgroundColor: brandColor }} />
-              {/* Vertical Connector */}
-              <div className="hidden md:block absolute bottom-1/2 right-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
-            </motion.div>
+              <div className="hidden md:block relative w-24 lg:w-32">
+                <div className="relative h-[2px] w-full" style={{ backgroundColor: brandColor }}>
+                  <TerminalDot position="left" />
+                  {/* Vertical Line turns UP */}
+                  <div className="absolute bottom-0 right-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* CENTER IMAGE */}
-          <motion.div 
-            variants={itemVariants}
-            className="relative z-20 flex justify-center px-4"
-          >
-            <div className="relative h-[250px] w-[250px] md:h-[350px] md:w-[350px] lg:h-[420px] lg:w-[420px]">
+          <motion.div variants={itemVariants} className="relative z-20 flex justify-center px-4">
+            <div className="relative h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[420px] lg:w-[420px]">
               <img 
                 src="/images/security.png" 
                 alt="Security Shield"
-                className="h-full w-full object-contain drop-shadow-xl"
+                className="h-full w-full object-contain"
               />
             </div>
           </motion.div>
@@ -83,26 +94,32 @@ export default function SecurityEthics() {
           {/* RIGHT COLUMN */}
           <div className="flex flex-col gap-10 md:h-[400px] md:justify-between md:gap-0">
             {/* Top Right */}
-            <motion.div variants={itemVariants} className="group relative flex justify-center md:items-center md:justify-start">
-              {/* Horizontal Line */}
-              <div className="hidden md:block absolute left-0 top-1/2 h-[2px] w-8 md:w-10" style={{ backgroundColor: brandColor }} />
-              {/* Vertical Connector */}
-              <div className="hidden md:block absolute left-0 top-1/2 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
-              <p className="z-10 mx-auto max-w-[340px] text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:ml-10 md:mx-0 md:max-w-none md:text-left lg:text-[16px]">
+            <div className="flex items-center justify-center md:justify-start gap-6">
+              <div className="hidden md:block relative w-24 lg:w-32">
+                <div className="relative h-[2px] w-full" style={{ backgroundColor: brandColor }}>
+                  <TerminalDot position="right" />
+                  {/* Vertical Line turns DOWN */}
+                  <div className="absolute left-0 top-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
+                </div>
+              </div>
+              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-left lg:text-[16px]">
                 Student data is encrypted and<br className="hidden md:block" /> protected
               </p>
-            </motion.div>
+            </div>
 
             {/* Bottom Right */}
-            <motion.div variants={itemVariants} className="group relative flex justify-center md:items-center md:justify-start">
-              {/* Horizontal Line */}
-              <div className="hidden md:block absolute left-0 top-1/2 h-[2px] w-8 md:w-10" style={{ backgroundColor: brandColor }} />
-              {/* Vertical Connector */}
-              <div className="hidden md:block absolute bottom-1/2 left-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
-              <p className="z-10 mx-auto max-w-[340px] text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:ml-10 md:mx-0 md:max-w-none md:text-left lg:text-[16px]">
+            <div className="flex items-center justify-center md:justify-start gap-6">
+              <div className="hidden md:block relative w-24 lg:w-32">
+                <div className="relative h-[2px] w-full" style={{ backgroundColor: brandColor }}>
+                  <TerminalDot position="right" />
+                  {/* Vertical Line turns UP */}
+                  <div className="absolute bottom-0 left-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
+                </div>
+              </div>
+              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-left lg:text-[16px]">
                 No selling or sharing of<br className="hidden md:block" /> student data
               </p>
-            </motion.div>
+            </div>
           </div>
 
         </motion.div>

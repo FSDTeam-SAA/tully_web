@@ -72,8 +72,8 @@ export default function CallToAction() {
               <Image
                 src="/images/readytoplan/rightsideimage.png"
                 alt="Tully on Desktop and Mobile"
-                width={1200}
-                height={800}
+                width={3000}
+                height={3000}
                 className="h-auto w-full object-contain"
                 priority
               />

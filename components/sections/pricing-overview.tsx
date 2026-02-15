@@ -61,16 +61,11 @@ export default function PricingOverview() {
   ]
 
   return (
-    <section id="pricing" className="min-h-screen scroll-mt-24 bg-white py-16 font-sans md:scroll-mt-28 md:py-24">
+    <section id="pricing" className="min-h-screen bg-white py-24 font-sans">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: -16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-10 text-center"
-        >
+        <div className="mb-16 text-center">
           <h2 className="mb-3 text-3xl font-bold tracking-tight text-[#2F3F5C] md:text-4xl uppercase">
             Pricing Overview
           </h2>
@@ -105,59 +100,56 @@ export default function PricingOverview() {
               </button>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Cards Grid */}
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3 lg:gap-8 items-start">
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3 items-center">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative flex flex-col overflow-hidden rounded-xl border shadow-sm transition-all hover:shadow-lg
+              className={`relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300
                 ${
                   plan.highlighted
-                    ? 'border-[#EAD4A8] bg-[#FFFBF2] ring-1 ring-[#EAD4A8]/50' // Middle Card (Cream)
-                    : 'border-[#EAEAEA] bg-white' // Outer Cards (White)
+                    ? 'border-[#EAD4A8] bg-[#FFFBF2] shadow-xl z-10 min-h-[720px]' // Taller middle card
+                    : 'border-[#EAEAEA] bg-white shadow-sm z-0 min-h-[640px]' // Shorter side cards
                 }
               `}
             >
-              {/* Top shape image */}
-              <div className="w-full">
+              {/* Top shape image - Fixed to top */}
+              <div className="absolute top-0 left-0 w-full">
                 <img 
                   src="/images/pricing-card-shape.png"
-                  alt="Pricing card decorative shape"
-                  className="w-full h-auto object-cover block "
-                  // 'block' prevents tiny gaps below inline images
+                  alt=""
+                  className="w-full h-auto object-cover block"
                 />
               </div>
 
-              <div className="mt-[-70px] flex flex-1 flex-col px-7 pb-6">
+              {/* Content area starts with top margin to clear the absolute image */}
+              <div className="relative flex flex-1 flex-col px-7 pb-8 pt-20">
                 
                 {/* Title Area */}
-                <div className="mb-6">
-                  <h3 className="text-xl font-medium text-[#E69526]">{plan.name}</h3>
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-[#E69526]">{plan.name}</h3>
                   <p className="text-xs text-[#6A768A]">{plan.subtitle}</p>
                 </div>
 
                 {/* Price Area */}
-                <div className="mb-1">
-                  <div className="flex items-baseline">
-                    <span className="text-[2.75rem] font-bold text-[#E69526] tracking-tight">
-                        $ {plan.price}
-                    </span>
-                    <span className="ml-2 text-lg text-[#E69526] font-medium">/month</span>
+                <div className="mb-2">
+                  <div className="flex items-baseline text-[#E69526]">
+                    <span className="text-4xl font-bold">$ {plan.price}</span>
+                    <span className="ml-1 text-sm font-medium">/month</span>
                   </div>
-                  <p className="text-xs text-[#6A768A] font-medium">{plan.description}</p>
+                  <p className="text-xs text-[#6A768A] mt-1">{plan.description}</p>
                 </div>
 
                 {/* Divider */}
                 <div className="my-6 h-px w-full bg-[#EAEAEA]" />
 
                 {/* Features List */}
-                <div className="mb-6 flex-1">
+                <div className="mb-8 flex-1">
                   <p className="mb-4 text-sm font-bold text-[#2F3F5C]">Features :</p>
                   <ul className="space-y-3">
                     {plan.features.map((feature) => (
@@ -169,9 +161,9 @@ export default function PricingOverview() {
                   </ul>
                 </div>
 
-                {/* CTA Button */}
+                {/* CTA Button pinned to bottom */}
                 <button
-                  className="w-full rounded-md bg-gradient-to-b from-[#F09E26] to-[#D6850E] py-3 text-sm font-bold text-white shadow-sm transition-transform active:scale-[0.98] hover:brightness-105"
+                  className="w-full rounded-md bg-gradient-to-b from-[#F09E26] to-[#D6850E] py-3 text-sm font-bold text-white shadow-md transition-all hover:brightness-105"
                 >
                   {plan.cta}
                 </button>
