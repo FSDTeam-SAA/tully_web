@@ -68,27 +68,29 @@ export default function ForSchools() {
           </motion.div>
 
           {/* Right Image Column - Increased Size */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1.15 }} // Increased end scale
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="relative flex justify-center md:justify-end"
-          >
-            {/* Increased width from 150% range to 180%+ 
-                Added scale-110 to force it larger than its container 
-            */}
-            <div className="relative z-10 w-full md:translate-x-16 lg:translate-x-24">
-              <Image
-                src="/images/For_Schools.png"
-                alt="Happy student holding phone with Tully app"
-                width={800} // Increased base width for better resolution at large scales
-                height={700}
-                className="h-auto w-full max-w-none object-contain"
-                priority
-              />
-            </div>
-          </motion.div>
+       {/* Right Image Column */}
+<motion.div
+  initial={{ opacity: 0, scale: 0.95 }}
+  whileInView={{ opacity: 1, scale: 1.1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+  className="relative flex justify-center md:justify-end"
+>
+  <div className="relative z-10 w-[280px] sm:w-[340px] md:w-[430px] lg:w-[560px] xl:w-[640px] md:translate-x-14 lg:translate-x-20">
+    <div className="relative aspect-[800/700] w-full">
+      <Image
+        src="/images/For_Schools.png"
+        alt="Happy student holding phone with Tully app"
+        fill
+        priority
+        className="object-contain"
+        sizes="(min-width: 1280px) 640px, (min-width: 1024px) 560px, (min-width: 768px) 430px, (min-width: 640px) 340px, 280px"
+      />
+    </div>
+  </div>
+</motion.div>
+
+
           
         </div>
       </div>
