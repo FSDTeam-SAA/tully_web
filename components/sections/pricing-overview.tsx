@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function PricingOverview() {
@@ -120,10 +121,14 @@ export default function PricingOverview() {
             >
               {/* Top shape image - Fixed to top */}
               <div className="absolute top-0 left-0 w-full">
-                <img 
+                <Image
                   src="/images/pricing-card-shape.png"
                   alt=""
-                  className="w-full h-auto object-cover block"
+                  width={433}
+                  height={204}
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="block h-auto w-full object-cover"
                 />
               </div>
 

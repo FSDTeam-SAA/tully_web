@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function SecurityEthics() {
   const brandColor = "#FDB03A" // The signature orange
@@ -83,9 +84,12 @@ export default function SecurityEthics() {
           {/* CENTER IMAGE */}
           <motion.div variants={itemVariants} className="relative z-20 flex justify-center px-4">
             <div className="relative h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[420px] lg:w-[420px]">
-              <img 
-                src="/images/security.png" 
+              <Image
+                src="/images/security.png"
                 alt="Security Shield"
+                fill
+                quality={100}
+                sizes="(max-width: 768px) 280px, (max-width: 1024px) 350px, 420px"
                 className="h-full w-full object-contain"
               />
             </div>

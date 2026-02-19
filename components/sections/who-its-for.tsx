@@ -8,17 +8,17 @@ export default function WhoItsFor() {
     {
       title: 'High-school students',
       description: 'Learn time management early and reduce school stress.',
-      image: '/images/whofor/High-school-students.png',
+      image: '/images/whofor/High-school-students.jpg',
     },
     {
       title: 'University & college students',
       description: 'Balance classes, projects, and exams with confidence.',
-      image: '/images/whofor/University-college_students.png',
+      image: '/images/whofor/University-college_students.jpg',
     },
     {
       title: 'Schools & institutions',
       description: 'Support students beyond the classroom with smart planning tools.',
-      image: '/images/whofor/Schools-institutions.png',
+      image: '/images/whofor/Schools-institutions.jpg',
     },
   ]
 
