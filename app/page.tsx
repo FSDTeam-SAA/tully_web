@@ -2,31 +2,35 @@
 
 import Header from '@/components/sections/header'
 import Hero from '@/components/sections/hero'
+import TheProblem from '@/components/sections/the-problem'
+import TheSolution from '@/components/sections/the-solution'
 import HowItWorks from '@/components/sections/how-it-works'
 import KeyFeatures from '@/components/sections/key-features'
+import WhyTullyDifferent from '@/components/sections/why-tully-different'
 import WhoItsFor from '@/components/sections/who-its-for'
+import StudentsGain from '@/components/sections/students-gain'
 import ForSchools from '@/components/sections/for-schools'
-import PricingOverview from '@/components/sections/pricing-overview'
-import ProductTour from '@/components/sections/product-tour'
 import SecurityEthics from '@/components/sections/security-ethics'
+import BetaInvitation from '@/components/sections/beta-invitation'
 import CallToAction from '@/components/sections/call-to-action'
-import ContactSection from '@/components/sections/contact'
 import Footer from '@/components/sections/footer'
 
 export default function Page() {
   return (
-    <main className="overflow-hidden bg-white">
+    <main className="overflow-hidden bg-white dark:bg-[#0b111a]">
       <Header />
       <Hero />
+      <TheProblem />
+      <TheSolution />
       <HowItWorks />
       <KeyFeatures />
+      <WhyTullyDifferent />
       <WhoItsFor />
+      <StudentsGain />
       <ForSchools />
-      <PricingOverview />
-      <ProductTour />
       <SecurityEthics />
+      <BetaInvitation />
       <CallToAction />
-      <ContactSection />
       <Footer />
     </main>
   )

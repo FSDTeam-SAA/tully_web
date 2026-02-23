@@ -2,15 +2,33 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { type MouseEvent } from 'react'
 
 export default function Footer() {
   const links = [
-    { label: 'About', href: '#home' },
-    { label: 'Contact', href: '#contact' },
-    { label: 'Privacy Policy', href: '#security' },
-    { label: 'Terms of Service', href: '#security' },
+    { label: 'Home', href: '#home' },
+    { label: 'The Problem', href: '#problem' },
+    { label: 'The Solution', href: '#solution' },
+    { label: 'How It Works', href: '#timeline' },
+    { label: 'Key Features', href: '#features' },
     { label: 'For Schools', href: '#schools' },
+    { label: 'Security & Ethics', href: '#security' },
   ]
+
+  const handleAnchorClick = (href: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    if (!href.startsWith('#')) return
+
+    const targetId = href.slice(1)
+    const target = document.getElementById(targetId)
+    if (!target) return
+
+    event.preventDefault()
+
+    const headerOffset = window.innerWidth >= 1024 ? 88 : 76
+    const top = target.getBoundingClientRect().top + window.scrollY - headerOffset
+    window.scrollTo({ top, behavior: 'smooth' })
+    window.history.replaceState(null, '', href)
+  }
 
   return (
     <footer
@@ -27,7 +45,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo_tully_footer.png"
+              src="/images/logo_tully.png"
               alt="Tully logo"
               width={200}
               height={208}
@@ -37,7 +55,12 @@ export default function Footer() {
 
           <nav className="flex flex-wrap items-center justify-center gap-5 text-xs md:text-sm">
             {links.map((link) => (
-              <a key={link.label} href={link.href} className="text-[#ced4df] transition-colors hover:text-white">
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={handleAnchorClick(link.href)}
+                className="text-[#ced4df] transition-colors hover:text-white"
+              >
                 {link.label}
               </a>
             ))}

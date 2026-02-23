@@ -47,7 +47,7 @@ export default function HowItWorks() {
   }
 
   return (
-    <section className="bg-white py-16 md:py-20">
+    <section id="timeline" className="scroll-mt-24 bg-white py-16 md:scroll-mt-28 md:py-20 dark:bg-[#0e1521]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -16 }}
@@ -56,11 +56,11 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center md:mb-14"
         >
-          <h2 className="mb-2 text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl">
+          <h2 className="mb-2 text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl dark:text-[#e2eaf7]">
             HOW TULLY WORKS
           </h2>
-          <p className="mx-auto max-w-md text-[#6a768a]">
-            A better way to plan your academic life
+          <p className="mx-auto max-w-md text-[#6a768a] dark:text-[#a8b6cb]">
+            A better way to plan your school week
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ export default function HowItWorks() {
                 variants={itemVariants}
                 className="mx-auto max-w-sm px-2 text-center md:px-4"
               >
-                <div className="relative z-10 mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/45 bg-white md:h-24 md:w-24">
+                <div className="relative z-10 mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/45 bg-white md:h-24 md:w-24 dark:border-[#33445d] dark:bg-[#162233]">
                   <Image
                     src={step.image}
                     alt={step.title}
@@ -91,7 +91,7 @@ export default function HowItWorks() {
                 <h3 className="mb-2 text-lg font-semibold text-primary">
                   {step.title}
                 </h3>
-                <p className="mx-auto max-w-xs text-sm leading-relaxed text-[#6a768a]">
+                <p className="mx-auto max-w-xs text-sm leading-relaxed text-[#6a768a] dark:text-[#a8b6cb]">
                   {step.description}
                 </p>
               </motion.div>
