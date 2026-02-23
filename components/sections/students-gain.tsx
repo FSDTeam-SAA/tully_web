@@ -20,7 +20,7 @@ export default function StudentsGain() {
   ]
 
   return (
-    <section className="overflow-hidden bg-white py-16 md:py-32 dark:bg-[#0e1521]">
+    <section id="students-gain" className="scroll-mt-24 overflow-hidden bg-white py-16 md:scroll-mt-28 md:py-32 dark:bg-[#0e1521]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div
@@ -74,7 +74,7 @@ export default function StudentsGain() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 style={{ 
                   left: `calc(42% + ${x}px)`,
-                  top: `calc(50% + ${y}px)`,
+                  top: `calc(42% + ${y}px)`,
                 }}
                 className="absolute flex w-48 -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-5 text-center"
               >

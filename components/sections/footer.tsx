@@ -6,12 +6,10 @@ import { type MouseEvent } from 'react'
 
 export default function Footer() {
   const links = [
-    { label: 'Home', href: '#home' },
-    { label: 'The Problem', href: '#problem' },
-    { label: 'The Solution', href: '#solution' },
-    { label: 'How It Works', href: '#timeline' },
     { label: 'Key Features', href: '#features' },
-    { label: 'For Schools', href: '#schools' },
+    { label: 'Why Tully Is Different', href: '#why-tully-different' },
+    { label: 'What Students Gain', href: '#students-gain' },
+    { label: 'For Schools & Institutions', href: '#schools' },
     { label: 'Security & Ethics', href: '#security' },
   ]
 

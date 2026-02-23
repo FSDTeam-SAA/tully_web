@@ -17,9 +17,10 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '#home' },
-    { label: 'How It Works', href: '#timeline' },
-    { label: 'Key Features', href: '#features' },
-    { label: 'For Schools', href: '#schools' },
+    { label: 'The Problem', href: '#problem' },
+    { label: 'The Solution', href: '#solution' },
+    { label: 'How Tully Works', href: '#timeline' },
+    { label: 'Who Tully Is For', href: '#who-its-for' },
   ]
 
   useEffect(() => {
