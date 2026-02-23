@@ -78,22 +78,22 @@ export default function Header() {
           className="flex-shrink-0"
         >
           <a href="#home" onClick={handleAnchorClick('#home')} className="inline-flex items-center">
-            <Image
-              src="/images/logo_tully.png"
-              alt="Tully logo"
-              width={132}
-              height={52}
-              priority
-              className="h-8 w-auto md:h-9 dark:hidden"
-            />
-            <Image
-              src="/images/logo_tully_footer.png"
-              alt="Tully logo"
-              width={132}
-              height={52}
-              priority
-              className="hidden h-8 w-auto md:h-9 dark:block"
-            />
+            <span className="relative block h-8 w-[84px] md:h-9 md:w-[95px]">
+              <Image
+                src="/images/logo_tully.png"
+                alt="Tully logo"
+                fill
+                priority
+                className="object-contain dark:hidden"
+              />
+              <Image
+                src="/images/logo_tully_footer.png"
+                alt="Tully logo"
+                fill
+                priority
+                className="hidden object-contain dark:block"
+              />
+            </span>
           </a>
         </motion.div>
 
@@ -149,20 +149,20 @@ export default function Header() {
             className="w-[84%] max-w-[340px] border-l border-primary/20 bg-[#f8f5ef] px-6 py-10 dark:border-[#2b3a4f] dark:bg-[#0f1724]"
           >
             <div className="mb-8">
-              <Image
-                src="/images/logo_tully.png"
-                alt="Tully logo"
-                width={132}
-                height={52}
-                className="h-8 w-auto dark:hidden"
-              />
-              <Image
-                src="/images/logo_tully_footer.png"
-                alt="Tully logo"
-                width={132}
-                height={52}
-                className="hidden h-8 w-auto dark:block"
-              />
+              <span className="relative block h-8 w-[84px]">
+                <Image
+                  src="/images/logo_tully.png"
+                  alt="Tully logo"
+                  fill
+                  className="object-contain dark:hidden"
+                />
+                <Image
+                  src="/images/logo_tully_footer.png"
+                  alt="Tully logo"
+                  fill
+                  className="hidden object-contain dark:block"
+                />
+              </span>
             </div>
 
             <div className="space-y-4">

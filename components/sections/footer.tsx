@@ -45,7 +45,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo_tully.png"
+              src="/images/logo_tully_footer.png"
               alt="Tully logo"
               width={200}
               height={208}
