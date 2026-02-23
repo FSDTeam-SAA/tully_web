@@ -68,7 +68,13 @@ export default function Footer() {
         </motion.div>
 
         <div className="mt-6 border-t border-[#1e2532] pt-4 text-center text-xs text-[#8f98a8]">
-          Tully (c) 2026
+          <a
+            href="mailto:info@tullyapp.tech"
+            className="text-[#b8c3d3] transition-colors hover:text-white"
+          >
+            info@tullyapp.tech
+          </a>
+          <p className="mt-2">Tully (c) 2026</p>
         </div>
       </div>
     </footer>
