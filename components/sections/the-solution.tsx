@@ -13,7 +13,7 @@ export default function TheSolution() {
   ]
 
   return (
-    <section id="solution" className="scroll-mt-24 bg-[#f6f4f2] py-16 md:scroll-mt-28 md:py-20 dark:bg-[#121c2a]">
+    <section id="solution" className="scroll-mt-24 bg-[#f8f4ed] py-16 md:scroll-mt-28 md:py-20 dark:bg-[#121c2a]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 14 }}

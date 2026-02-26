@@ -22,10 +22,10 @@ export default function Page() {
       <Hero />
       <TheProblem />
       <TheSolution />
+      <WhoItsFor />
       <HowItWorks />
       <KeyFeatures />
       <WhyTullyDifferent />
-      <WhoItsFor />
       <StudentsGain />
       <ForSchools />
       <SecurityEthics />
