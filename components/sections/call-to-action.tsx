@@ -13,17 +13,17 @@ export default function CallToAction() {
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.45 }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title text-[#2f3f5c] dark:text-[#e2eaf7]">
             Ready to take control of your workload?
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm text-[#6b778d] md:text-base dark:text-[#a6b5ca]">
+          <p className="tully-section-lead mx-auto mt-3 max-w-xl text-[#6b778d] dark:text-[#a6b5ca]">
             Start planning smarter this semester.
           </p>
 
           <Button
             asChild
             variant="outline"
-            className="mt-7 rounded-md border-primary/40 bg-white px-8 py-3 text-sm font-semibold text-primary hover:bg-primary/5 md:text-base dark:border-[#3a4b63] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1f2d41]"
+            className="mt-7 rounded-md border-primary/40 bg-white px-8 py-3 text-base font-semibold text-primary hover:bg-primary/5 dark:border-[#3a4b63] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1f2d41]"
           >
             <a href="#home">Get Early Access</a>
           </Button>

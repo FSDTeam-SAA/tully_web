@@ -32,10 +32,10 @@ export default function WhoItsFor() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-3 text-3xl font-bold tracking-tight text-[#4a5568] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title mb-3 text-[#4a5568] dark:text-[#e2eaf7]">
             WHO TULLY IS FOR
           </h2>
-          <p className="text-xl font-light text-[#94a3b8] dark:text-[#a8b7cd]">Built for every learning stage</p>
+          <p className="tully-section-lead font-light text-[#94a3b8] dark:text-[#a8b7cd]">Built for every learning stage</p>
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-3">

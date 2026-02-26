@@ -9,8 +9,8 @@ export default function ContactSection() {
       <div className="mx-auto max-w-7xl px-4">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-5xl font-bold text-[#3D4C5E] mb-3">Contact Us</h2>
-          <p className="text-xl text-[#7A869A]">Send us a message</p>
+          <h2 className="tully-section-title mb-3 text-[#3D4C5E]">Contact Us</h2>
+          <p className="tully-section-lead text-[#7A869A]">Send us a message</p>
         </div>
 
         <div className="relative mx-auto flex flex-col md:flex-row items-center justify-center">
@@ -25,7 +25,7 @@ export default function ContactSection() {
             style={{ backgroundImage: "url('/images/contact_bg.png')" }}
           >
             <div>
-              <h3 className="mb-3 text-3xl font-semibold">Contact Information</h3>
+              <h3 className="tully-section-subtitle mb-3">Contact Information</h3>
               <p className="mb-12 text-base opacity-90">Say something to start live chat</p>
               
               <div className="space-y-10">
@@ -106,7 +106,7 @@ export default function ContactSection() {
               <div className="flex justify-center pt-6">
                 <button
                   type="submit"
-                  className="w-full md:w-auto min-w-[240px] rounded-xl bg-gradient-to-b from-[#F2994A] to-[#E28500] px-10 py-4 text-xl font-bold text-white shadow-[0_10px_20px_rgba(226,133,0,0.3)] transition-all hover:brightness-110 active:scale-95"
+                  className="w-full md:w-auto min-w-[240px] rounded-xl bg-gradient-to-b from-[#F2994A] to-[#E28500] px-10 py-4 text-lg font-bold text-white shadow-[0_10px_20px_rgba(226,133,0,0.3)] transition-all hover:brightness-110 active:scale-95"
                 >
                   Submit
                 </button>

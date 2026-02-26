@@ -48,10 +48,10 @@ export default function KeyFeatures() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-3 text-3xl font-bold tracking-tight text-[#4a5568] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title mb-3 uppercase text-[#4a5568] dark:text-[#e2eaf7]">
             KEY FEATURES
           </h2>
-          <p className="mx-auto max-w-md text-lg text-[#718096] dark:text-[#a8b6cb]">
+          <p className="tully-section-lead mx-auto max-w-md text-[#718096] dark:text-[#a8b6cb]">
             Everything students need to stay organized and consistent
           </p>
         </motion.div>

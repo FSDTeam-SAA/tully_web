@@ -33,10 +33,10 @@ export default function SecurityEthics() {
         
         {/* Header */}
         <div className="mb-10 text-center md:mb-20">
-          <h2 className="mb-3 text-2xl font-bold tracking-[0.2em] text-[#3A475C] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title mb-3 uppercase text-[#3A475C] dark:text-[#e2eaf7]">
             SECURITY & ETHICS
           </h2>
-          <p className="text-[15px] font-medium text-[#828E9F] md:text-lg dark:text-[#a6b5ca]">
+          <p className="tully-section-lead font-medium text-[#828E9F] dark:text-[#a6b5ca]">
             Built with trust in mind
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function SecurityEthics() {
           <div className="flex flex-col gap-10 md:h-[400px] md:justify-between md:gap-0">
             {/* Top Left */}
             <div className="flex items-center justify-center md:justify-end gap-6">
-              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-right lg:text-[16px] dark:text-[#a8b7cd]">
+              <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-right lg:text-base dark:text-[#a8b7cd]">
                 AI supports planning never<br className="hidden md:block" /> completes academic work
               </p>
               {/* Connector Container */}
@@ -68,7 +68,7 @@ export default function SecurityEthics() {
 
             {/* Bottom Left */}
             <div className="flex items-center justify-center md:justify-end gap-6">
-              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-right lg:text-[16px] dark:text-[#a8b7cd]">
+              <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-right lg:text-base dark:text-[#a8b7cd]">
                 Designed to align with<br className="hidden md:block" /> educational integrity standards
               </p>
               <div className="hidden md:block relative w-24 lg:w-32">
@@ -106,7 +106,7 @@ export default function SecurityEthics() {
                   <div className="absolute left-0 top-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
                 </div>
               </div>
-              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-left lg:text-[16px] dark:text-[#a8b7cd]">
+              <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-left lg:text-base dark:text-[#a8b7cd]">
                 Student data is encrypted and<br className="hidden md:block" /> protected
               </p>
             </div>
@@ -120,7 +120,7 @@ export default function SecurityEthics() {
                   <div className="absolute bottom-0 left-0 h-[100px] w-[2px]" style={{ backgroundColor: brandColor }} />
                 </div>
               </div>
-              <p className="z-10 text-center text-[14px] font-medium leading-relaxed text-[#68778D] md:text-left lg:text-[16px] dark:text-[#a8b7cd]">
+              <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-left lg:text-base dark:text-[#a8b7cd]">
                 No selling or sharing of<br className="hidden md:block" /> student data
               </p>
             </div>

@@ -29,10 +29,10 @@ export default function StudentsGain() {
           viewport={{ once: true }}
           className="mb-16 md:mb-24 text-center"
         >
-          <h2 className="text-[32px] font-bold tracking-tight text-[#2f3f5c] md:text-[40px] dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title text-[#2f3f5c] dark:text-[#e2eaf7]">
             What students gain
           </h2>
-          <p className="mx-auto mt-4 text-[16px] text-[#6b778d] md:text-[18px] dark:text-[#a6b5ca]">
+          <p className="tully-section-lead mx-auto mt-4 max-w-xl text-[#6b778d] dark:text-[#a6b5ca]">
             Practical support to manage schoolwork with confidence.
           </p>
         </motion.div>
@@ -83,7 +83,7 @@ export default function StudentsGain() {
                   <item.icon size={48} strokeWidth={1.5} />
                 </div>
                 
-                <p className="max-w-[160px] text-[16px] font-bold leading-[1.2] tracking-tight text-[#2f3f5c] dark:text-[#dce5f4]">
+                <p className="max-w-[160px] text-base font-bold leading-[1.2] tracking-tight text-[#2f3f5c] dark:text-[#dce5f4]">
                   {item.label}
                 </p>
               </motion.div>
@@ -98,7 +98,7 @@ export default function StudentsGain() {
               <div className="mb-4 flex h-24 w-24 items-center justify-center rounded-[32px] bg-[#ff9f1c] text-white shadow-lg">
                 <item.icon size={44} strokeWidth={1.5} />
               </div>
-              <p className="text-[18px] font-bold text-[#2f3f5c] dark:text-[#dce5f4]">{item.label}</p>
+              <p className="text-lg font-bold text-[#2f3f5c] dark:text-[#dce5f4]">{item.label}</p>
             </div>
           ))}
         </div>

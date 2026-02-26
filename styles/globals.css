@@ -12,6 +12,20 @@ body {
   }
 }
 
+@layer components {
+  .tully-section-title {
+    @apply text-3xl font-bold tracking-tight md:text-4xl;
+  }
+
+  .tully-section-lead {
+    @apply text-base leading-relaxed md:text-lg md:leading-8;
+  }
+
+  .tully-section-subtitle {
+    @apply text-xl font-semibold tracking-tight md:text-2xl;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -54,7 +54,7 @@ export default function Hero() {
 
             <motion.p
               variants={itemVariants}
-              className="mx-auto max-w-md text-base leading-relaxed text-slate-600 md:mx-0 md:max-w-[550px] md:text-[22px] md:leading-8 dark:text-[#a9b8cf]"
+              className="mx-auto max-w-md text-base leading-relaxed text-slate-600 md:mx-0 md:max-w-[550px] md:text-xl md:leading-8 dark:text-[#a9b8cf]"
             >
               Tully helps students break down assignments, manage their time, and stay on track without doing the work for them.
             </motion.p>

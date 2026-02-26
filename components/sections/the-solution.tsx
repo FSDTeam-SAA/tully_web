@@ -22,19 +22,19 @@ export default function TheSolution() {
           transition={{ duration: 0.45 }}
           className="mb-12 text-center md:mb-14"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-[#3b4963] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title text-[#3b4963] dark:text-[#e2eaf7]">
             The Solution
           </h2>
           <p className="mt-1 text-2xl font-bold tracking-tight text-primary md:text-3xl">
             Meet Tully
           </p>
-          <p className="mx-auto mt-3 max-w-3xl text-sm leading-relaxed text-[#6f7b90] md:text-lg dark:text-[#a8b7cd]">
+          <p className="tully-section-lead mx-auto mt-3 max-w-3xl text-[#6f7b90] dark:text-[#a8b7cd]">
             Tully transforms assignments into a clear, manageable plan that adapts to real life.
           </p>
 
           <div className="mt-12 grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr]">
             <div className="text-left">
-              <h3 className="text-2xl font-semibold tracking-tight text-[#3b4963] md:text-[38px] dark:text-[#dfe8f5]">
+              <h3 className="text-2xl font-semibold tracking-tight text-[#3b4963] md:text-3xl dark:text-[#dfe8f5]">
                 Instead of a long list of tasks, students get:
               </h3>
 
@@ -46,13 +46,13 @@ export default function TheSolution() {
                       <span className="mt-[3px] inline-flex text-primary">
                         <Icon className="h-[18px] w-[18px]" strokeWidth={2.1} />
                       </span>
-                      <span className="text-xl leading-relaxed">{item.label}</span>
+                      <span className="text-lg leading-relaxed md:text-xl">{item.label}</span>
                     </li>
                   )
                 })}
               </ul>
 
-              <p className="mt-11 text-[22px] font-semibold text-[#53627b] dark:text-[#c3cfe1]">
+              <p className="mt-11 text-lg font-semibold text-[#53627b] md:text-xl dark:text-[#c3cfe1]">
                 <span className="text-primary">Built to help students plan better</span> - not just work harder.
               </p>
             </div>

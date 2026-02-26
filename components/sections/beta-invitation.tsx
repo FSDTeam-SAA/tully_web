@@ -16,23 +16,23 @@ export default function BetaInvitation() {
             transition={{ duration: 0.45 }}
           >
             <p className="text-sm font-semibold tracking-[0.12em] text-primary">BETA INVITATION</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl dark:text-[#e2eaf7]">
+            <h2 className="tully-section-title mt-2 text-[#2f3f5c] dark:text-[#e2eaf7]">
               Be among the first to try Tully
             </h2>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#6b778d] md:text-base dark:text-[#a8b7cd]">
+            <p className="tully-section-lead mt-4 max-w-xl text-[#6b778d] dark:text-[#a8b7cd]">
               We are onboarding early students and schools to shape the next generation of planning support.
             </p>
 
             <div className="mt-6">
-              <p className="text-sm font-semibold text-[#3c485d] md:text-base dark:text-[#dce6f4]">Early users receive:</p>
-              <ul className="mt-3 space-y-2 text-sm text-[#5d6a80] md:text-base dark:text-[#a8b7cd]">
+              <p className="text-base font-semibold text-[#3c485d] dark:text-[#dce6f4]">Early users receive:</p>
+              <ul className="mt-3 space-y-2 text-base text-[#5d6a80] dark:text-[#a8b7cd]">
                 <li>- Priority access</li>
                 <li>- Direct feedback channel</li>
                 <li>- New feature preview releases</li>
               </ul>
             </div>
 
-            <Button className="mt-8 rounded-md px-7 py-3 text-sm font-semibold text-white md:text-base">
+            <Button className="mt-8 rounded-md px-7 py-3 text-base font-semibold text-white">
               Join Beta Waitlist
             </Button>
           </motion.div>

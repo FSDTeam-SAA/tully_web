@@ -24,12 +24,12 @@ export default function ProductTour() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="mb-1 text-3xl font-bold tracking-tight md:text-4xl">
+              <h2 className="tully-section-title mb-1">
                 <span className="text-[#D97706]">PRODUCT</span>{' '}
                 <span className="text-[#334155]">TOUR</span>
               </h2>
               
-              <p className="mb-8 text-lg text-[#94A3B8]">
+              <p className="tully-section-lead mb-8 text-[#94A3B8]">
                 See Tully in action
               </p>
               

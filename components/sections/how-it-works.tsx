@@ -56,10 +56,10 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-center md:mb-14"
         >
-          <h2 className="mb-2 text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title mb-2 text-[#2f3f5c] dark:text-[#e2eaf7]">
             HOW TULLY WORKS
           </h2>
-          <p className="mx-auto max-w-md text-[#6a768a] dark:text-[#a8b6cb]">
+          <p className="tully-section-lead mx-auto max-w-md text-[#6a768a] dark:text-[#a8b6cb]">
             A better way to plan your school week
           </p>
         </motion.div>

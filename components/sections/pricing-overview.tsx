@@ -67,10 +67,10 @@ export default function PricingOverview() {
         
         {/* Header Section */}
         <div className="mb-16 text-center">
-          <h2 className="mb-3 text-3xl font-bold tracking-tight text-[#2F3F5C] md:text-4xl uppercase">
+          <h2 className="tully-section-title mb-3 uppercase text-[#2F3F5C]">
             Pricing Overview
           </h2>
-          <p className="mb-8 text-lg text-[#6A768A]">Simple, student friendly pricing</p>
+          <p className="tully-section-lead mb-8 text-[#6A768A]">Simple, student friendly pricing</p>
 
           {/* Toggle Switch */}
           <div className="flex items-center justify-center">

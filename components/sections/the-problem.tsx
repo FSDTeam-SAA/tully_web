@@ -54,7 +54,7 @@ export default function TheProblem() {
           transition={{ duration: 0.5 }}
           className="mb-16 text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-[#2f3f5c] md:text-4xl dark:text-[#e2eaf7]">
+          <h2 className="tully-section-title text-[#2f3f5c] dark:text-[#e2eaf7]">
             The Problem
           </h2>
           <h3 className="mt-2 text-xl font-semibold text-[#f59e0b] md:text-2xl dark:text-[#f8b03d]">
@@ -82,7 +82,7 @@ export default function TheProblem() {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mx-auto mt-16 max-w-3xl text-center text-sm font-medium text-[#f59e0b] md:text-lg dark:text-[#f8b03d]"
+          className="mx-auto mt-16 max-w-3xl text-center text-base font-medium text-[#f59e0b] md:text-lg dark:text-[#f8b03d]"
         >
           Traditional planners and school platforms show what to do -
           <span className="font-normal text-[#6b778d] dark:text-[#a5b4c9]">
@@ -112,7 +112,7 @@ function ProblemCard({ item, index }: { item: ProblemItem; index: number }) {
       <h3 className="mb-3 text-lg font-bold text-[#f59e0b] dark:text-[#f8b03d]">
         {item.title}
       </h3>
-      <p className="text-[15px] leading-relaxed text-[#6b778d] dark:text-[#a5b4c9]">
+      <p className="text-sm leading-relaxed text-[#6b778d] md:text-base dark:text-[#a5b4c9]">
         {item.description}
       </p>
     </motion.article>

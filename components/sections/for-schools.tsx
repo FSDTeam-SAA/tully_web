@@ -28,11 +28,11 @@ export default function ForSchools() {
             className="flex flex-col space-y-8 z-20"
           >
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+              <h2 className="tully-section-title">
                 <span className="text-[#334155] dark:text-[#dfe8f5]">FOR </span>
                 <span className="text-[#D97706]">SCHOOLS & INSTITUTIONS</span>
               </h2>
-              <p className="text-sm font-medium tracking-[0.04em] text-[#94a3b8] md:text-base dark:text-[#a8b7cd]">
+              <p className="tully-section-lead font-medium tracking-[0.04em] text-[#94a3b8] dark:text-[#a8b7cd]">
                 Help students plan better, not just work harder
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function ForSchools() {
 
             <div>
               <Button 
-                className="rounded-md px-7 py-3 text-sm font-semibold text-white md:text-base"
+                className="rounded-md px-7 py-3 text-base font-semibold text-white"
               >
                 Join waitlist
               </Button>
