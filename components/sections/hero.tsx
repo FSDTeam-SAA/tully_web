@@ -69,7 +69,7 @@ export default function Hero() {
               <Button
                 asChild
                 variant="outline"
-                className="rounded-md border border-primary/50 bg-white px-8 py-6 text-lg font-semibold text-primary hover:bg-primary/5 dark:border-[#3d4d64] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1e2d41]"
+                className="rounded-md border border-primary/50 bg-card px-8 py-6 text-lg font-semibold text-primary hover:bg-card/80 dark:border-[#3d4d64] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1e2d41]"
               >
                 <a href="#schools">For Schools</a>
               </Button>
@@ -110,9 +110,9 @@ export default function Hero() {
             {trustItems.map(({ icon: Icon, label }, index) => (
               <div
                 key={label}
-                className={`flex items-center justify-center gap-2.5 px-5 py-6 text-center text-primary dark:text-[#ffc76a] ${
+                className={`flex items-center justify-center gap-2.5 px-5 py-6 text-center text-[#2f3f5c] dark:text-[#ffc76a] ${
                   index < trustItems.length - 1
-                    ? 'border-b border-[#d8c7b7] md:border-b-0 md:border-r md:border-[#d8c7b7] dark:border-[#304564]'
+                    ? 'border-b border-[#d79033]/35 md:border-b-0 md:border-r md:border-[#d79033]/35 dark:border-[#304564]'
                     : ''
                 }`}
               >

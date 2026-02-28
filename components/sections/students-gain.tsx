@@ -41,7 +41,7 @@ export default function StudentsGain() {
         <div className="relative mx-auto hidden h-[600px] w-full max-w-6xl items-center justify-center md:flex">
           
           {/* Central Logo with Shadow/Glow */}
-          <div className="absolute left-1/2 top-1/2 z-10 flex h-[180px] w-[180px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-orange-50 bg-white shadow-[0_0_80px_rgba(255,159,28,0.12)] dark:border-[#33445d] dark:bg-[#162233] dark:shadow-none">
+          <div className="absolute left-1/2 top-1/2 z-10 flex h-[180px] w-[180px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-primary/20 bg-card shadow-[0_0_80px_rgba(255,159,28,0.12)] dark:border-[#33445d] dark:bg-[#162233] dark:shadow-none">
             <div className="relative h-12 w-28">
               <Image 
                 src="/images/logo_tully.png" 

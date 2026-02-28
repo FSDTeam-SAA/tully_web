@@ -11,10 +11,10 @@ export default function ProductTour() {
   ]
 
   return (
-    <section className="bg-white py-12 md:py-20">
+    <section className="bg-background py-12 md:py-20">
       <div className="mx-auto max-w-6xl px-4">
         {/* Main Card Container */}
-        <div className="rounded-[40px] bg-[#FFF1E7] p-8 md:p-16">
+        <div className="rounded-[40px] border border-primary/15 bg-card p-8 md:p-16">
           <div className="grid items-center gap-12 md:grid-cols-2">
             
             {/* Left Content */}

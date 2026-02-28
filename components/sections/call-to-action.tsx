@@ -23,7 +23,7 @@ export default function CallToAction() {
           <Button
             asChild
             variant="outline"
-            className="mt-7 rounded-md border-primary/40 bg-white px-8 py-3 text-base font-semibold text-primary hover:bg-primary/5 dark:border-[#3a4b63] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1f2d41]"
+            className="mt-7 rounded-md border-primary/40 bg-card px-8 py-3 text-base font-semibold text-primary hover:bg-card/80 dark:border-[#3a4b63] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1f2d41]"
           >
             <a href="#home">Get Early Access</a>
           </Button>

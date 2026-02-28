@@ -19,8 +19,8 @@ export default function Header() {
     { label: 'Home', href: '#home' },
     { label: 'The Problem', href: '#problem' },
     { label: 'The Solution', href: '#solution' },
-    { label: 'How Tully Works', href: '#timeline' },
     { label: 'Who Tully Is For', href: '#who-its-for' },
+    { label: 'How Tully Works', href: '#timeline' },
   ]
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-300',
         isScrolled || isOpen
-          ? 'border-b border-primary/20 bg-white/95 shadow-sm dark:border-[#243449] dark:bg-[#0f1724]/95'
+          ? 'border-b border-primary/20 bg-background/95 shadow-sm backdrop-blur-sm dark:border-[#243449] dark:bg-[#0f1724]/95'
           : 'bg-transparent border-b border-transparent',
       )}
     >
@@ -124,7 +124,7 @@ export default function Header() {
             type="button"
             onClick={handleThemeToggle}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-[#d5dbe4] bg-white/85 text-[#334155] transition-colors hover:bg-white dark:border-[#2b3a4f] dark:bg-[#101a29] dark:text-[#dce5f3] dark:hover:bg-[#172334]"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-primary/20 bg-card text-[#334155] transition-colors hover:bg-card/80 dark:border-[#2b3a4f] dark:bg-[#101a29] dark:text-[#dce5f3] dark:hover:bg-[#172334]"
           >
             {mounted && isDark ? <Sun className="h-[18px] w-[18px]" /> : <Moon className="h-[18px] w-[18px]" />}
           </button>
@@ -147,7 +147,7 @@ export default function Header() {
 
           <SheetContent
             side="right"
-            className="w-[84%] max-w-[340px] border-l border-primary/20 bg-[#f8f5ef] px-6 py-10 dark:border-[#2b3a4f] dark:bg-[#0f1724]"
+            className="w-[84%] max-w-[340px] border-l border-primary/20 bg-background px-6 py-10 dark:border-[#2b3a4f] dark:bg-[#0f1724]"
           >
             <div className="mb-8">
               <span className="relative block h-8 w-[84px]">
@@ -183,7 +183,7 @@ export default function Header() {
             <button
               type="button"
               onClick={handleThemeToggle}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-[#d5dbe4] bg-white/80 px-4 py-2.5 text-sm font-semibold text-[#334155] transition-colors hover:bg-white dark:border-[#2d3d53] dark:bg-[#101a29] dark:text-[#dce5f3] dark:hover:bg-[#172334]"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-primary/20 bg-card px-4 py-2.5 text-sm font-semibold text-[#334155] transition-colors hover:bg-card/80 dark:border-[#2d3d53] dark:bg-[#101a29] dark:text-[#dce5f3] dark:hover:bg-[#172334]"
             >
               {mounted && isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               <span>{isDark ? 'Switch to light mode' : 'Switch to dark mode'}</span>

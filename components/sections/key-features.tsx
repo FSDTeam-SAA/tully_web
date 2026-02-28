@@ -66,7 +66,7 @@ export default function KeyFeatures() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col items-center rounded-xl bg-white p-8 text-center shadow-sm dark:border dark:border-[#2d3c51] dark:bg-[#172334] dark:shadow-none"
+                className="flex flex-col items-center rounded-xl border border-primary/15 bg-card p-8 text-center shadow-sm dark:border dark:border-[#2d3c51] dark:bg-[#172334] dark:shadow-none"
               >
                 {/* Icon Container: Matching the Orange Squircle */}
                 <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-[24px] bg-[#ffa51a] shadow-lg shadow-orange-200">

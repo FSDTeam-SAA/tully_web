@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone, Facebook, Instagram, Youtube } from 'lucide-react'
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="scroll-mt-24 bg-white py-20 font-sans overflow-hidden md:scroll-mt-28">
+    <section id="contact" className="scroll-mt-24 bg-background py-20 font-sans overflow-hidden md:scroll-mt-28">
       <div className="mx-auto max-w-7xl px-4">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -63,8 +63,8 @@ export default function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            // z-10 puts this over the orange card. bg-[#FFF4E7] matches the cream color.
-            className="relative z-10 w-full max-w-3xl rounded-[2.5rem] border border-[#FBE9D7] bg-[#FFF4E7] p-8 shadow-2xl sm:p-12"
+            // z-10 puts this over the orange card.
+            className="relative z-10 w-full max-w-3xl rounded-[2.5rem] border border-primary/20 bg-card p-8 shadow-2xl sm:p-12"
           >
             <form className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">

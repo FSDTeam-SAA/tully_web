@@ -28,7 +28,7 @@ export default function WhyTullyDifferent() {
           transition={{ duration: 0.45 }}
           className="text-center"
         >
-          <h2 className="text-4xl font-semibold tracking-tight md:text-5xl text-[#2f3f5c] dark:text-[#e2eaf7]">
+          <h2 className="text-4xl font-bold italic tracking-tight text-[#2f3f5c] md:text-5xl dark:text-[#e2eaf7]">
             WHY TULLY IS DIFFERENT
           </h2>
           <p className="tully-section-lead mx-auto mt-3 max-w-2xl text-lg text-[#6b778d] md:text-xl dark:text-[#a5b4c9]">

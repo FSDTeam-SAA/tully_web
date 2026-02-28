@@ -46,7 +46,7 @@ export default function WhoItsFor() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex flex-col overflow-hidden rounded-xl border border-[#e2e8f0] bg-white p-2 shadow-sm transition-shadow hover:shadow-md dark:border-[#32435d] dark:bg-[#172334] dark:shadow-none"
+              className="flex flex-col overflow-hidden rounded-xl border border-primary/15 bg-card p-2 shadow-sm transition-shadow hover:shadow-md dark:border-[#32435d] dark:bg-[#172334] dark:shadow-none"
             >
               {/* Image Container */}
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">

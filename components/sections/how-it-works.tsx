@@ -78,7 +78,7 @@ export default function HowItWorks() {
                 variants={itemVariants}
                 className="mx-auto max-w-sm px-2 text-center md:px-4"
               >
-                <div className="relative z-10 mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/45 bg-white md:h-24 md:w-24 dark:border-[#33445d] dark:bg-[#162233]">
+                <div className="relative z-10 mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/30 bg-card md:h-24 md:w-24 dark:border-[#33445d] dark:bg-[#162233]">
                   <Image
                     src={step.image}
                     alt={step.title}

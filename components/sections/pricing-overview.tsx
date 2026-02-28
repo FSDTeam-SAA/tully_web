@@ -62,7 +62,7 @@ export default function PricingOverview() {
   ]
 
   return (
-    <section id="pricing" className="min-h-screen bg-white py-24 font-sans">
+    <section id="pricing" className="min-h-screen bg-background py-24 font-sans">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
@@ -74,7 +74,7 @@ export default function PricingOverview() {
 
           {/* Toggle Switch */}
           <div className="flex items-center justify-center">
-            <div className="relative grid w-[180px] grid-cols-2 rounded-full border border-[#E69526] bg-[#FFFBF2] p-1">
+            <div className="relative grid w-[180px] grid-cols-2 rounded-full border border-[#E69526] bg-card p-1">
               <span
                 aria-hidden="true"
                 className={`pointer-events-none absolute inset-y-1 left-1 w-[calc(50%-4px)] rounded-full bg-[linear-gradient(180deg,#FFA21A_13.54%,#C27300_100%)] transition-transform duration-300 ease-out ${
@@ -114,8 +114,8 @@ export default function PricingOverview() {
               className={`relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300
                 ${
                   plan.highlighted
-                    ? 'border-[#EAD4A8] bg-[#FFFBF2] shadow-xl z-10 min-h-[720px]' // Taller middle card
-                    : 'border-[#EAEAEA] bg-white shadow-sm z-0 min-h-[640px]' // Shorter side cards
+                    ? 'border-[#EAD4A8] bg-[#fff4e3] shadow-xl z-10 min-h-[720px]' // Taller middle card
+                    : 'border-primary/15 bg-card shadow-sm z-0 min-h-[640px]' // Shorter side cards
                 }
               `}
             >

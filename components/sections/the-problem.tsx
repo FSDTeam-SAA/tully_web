@@ -104,7 +104,7 @@ function ProblemCard({ item, index }: { item: ProblemItem; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="flex flex-col items-center rounded-2xl border-2 border-[#fcd34d]/30 bg-white p-8 text-center transition-shadow hover:shadow-md dark:border-[#32445f] dark:bg-[#162233]"
+      className="flex flex-col items-center rounded-2xl border-2 border-[#f0af5d]/35 bg-card p-8 text-center transition-shadow hover:shadow-md dark:border-[#32445f] dark:bg-[#162233]"
     >
       <div className="mb-5 flex h-14 w-14 items-center justify-center">
         <Icon className="h-10 w-10 text-[#f59e0b] dark:text-[#f8b03d]" strokeWidth={1.5} />
