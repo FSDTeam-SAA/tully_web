@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 export default function BetaInvitation() {
   return (
-    <section id="beta" className="bg-[#f8f4ed] py-16 md:py-20 dark:bg-[#111a27]">
+    <section id="beta" className="tully-bg-alt-a py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr]">
           <motion.div

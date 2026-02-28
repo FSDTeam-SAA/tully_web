@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 export default function CallToAction() {
   return (
-    <section id="ready-to-plan" className="bg-white py-14 md:py-16 dark:bg-[#0e1521]">
+    <section id="ready-to-plan" className="tully-bg-section py-14 md:py-16">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}

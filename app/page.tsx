@@ -17,7 +17,7 @@ import Footer from '@/components/sections/footer'
 
 export default function Page() {
   return (
-    <main className="overflow-hidden bg-white dark:bg-[#0b111a]">
+    <main className="tully-bg-page overflow-hidden">
       <Header />
       <Hero />
       <TheProblem />

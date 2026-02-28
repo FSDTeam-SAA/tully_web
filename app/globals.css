@@ -20,6 +20,26 @@
   .tully-section-subtitle {
     @apply text-xl font-semibold tracking-tight md:text-2xl;
   }
+
+  .tully-bg-page {
+    background: var(--tully-bg-page);
+  }
+
+  .tully-bg-section {
+    background: var(--tully-bg-section);
+  }
+
+  .tully-bg-alt-a {
+    background: var(--tully-bg-alt-a);
+  }
+
+  .tully-bg-alt-b {
+    background: var(--tully-bg-alt-b);
+  }
+
+  .tully-bg-band {
+    background: var(--tully-bg-band);
+  }
 }
 
 @layer base {
@@ -57,6 +77,12 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --tully-bg-page: #f6f2eb;
+    --tully-bg-section: #fbf8f3;
+    --tully-bg-alt-a: #f3ece2;
+    --tully-bg-alt-b: #efe6da;
+    --tully-bg-band: #e8d8c4;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -91,6 +117,12 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --tully-bg-page: #0b111a;
+    --tully-bg-section: #0e1521;
+    --tully-bg-alt-a: #111a27;
+    --tully-bg-alt-b: #121c2a;
+    --tully-bg-band: linear-gradient(90deg, #1a273a 0%, #1c2d45 50%, #1a273a 100%);
   }
 }
 

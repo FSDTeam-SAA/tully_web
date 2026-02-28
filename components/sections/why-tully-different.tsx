@@ -19,7 +19,7 @@ export default function WhyTullyDifferent() {
   ]
 
   return (
-    <section id="why-tully-different" className="scroll-mt-24 bg-white py-16 md:scroll-mt-28 md:py-20 dark:bg-[#0e1521]">
+    <section id="why-tully-different" className="tully-bg-section scroll-mt-24 py-16 md:scroll-mt-28 md:py-20">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 14 }}

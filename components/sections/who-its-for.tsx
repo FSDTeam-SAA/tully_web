@@ -23,7 +23,7 @@ export default function WhoItsFor() {
   ]
 
   return (
-    <section id="who-its-for" className="scroll-mt-24 bg-[#f8f4ed] py-16 md:scroll-mt-28 md:py-24 dark:bg-[#121c2a]">
+    <section id="who-its-for" className="tully-bg-alt-b scroll-mt-24 py-16 md:scroll-mt-28 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

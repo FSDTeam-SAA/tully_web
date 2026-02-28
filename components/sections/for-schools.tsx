@@ -14,7 +14,7 @@ export default function ForSchools() {
   ]
 
   return (
-    <section id="schools" className="scroll-mt-24 overflow-hidden bg-[#f8f4ed] py-16 md:scroll-mt-28 md:py-24 dark:bg-[#111a27]">
+    <section id="schools" className="tully-bg-alt-a scroll-mt-24 overflow-hidden py-16 md:scroll-mt-28 md:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Simplified 50/50 Grid */}
         <div className="grid items-center gap-8 md:grid-cols-2">

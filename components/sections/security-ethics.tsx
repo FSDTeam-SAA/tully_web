@@ -28,7 +28,7 @@ export default function SecurityEthics() {
   )
 
   return (
-    <section id="security" className="relative overflow-hidden scroll-mt-24 bg-white py-14 md:scroll-mt-28 md:py-28 dark:bg-[#0e1521]">
+    <section id="security" className="tully-bg-section relative overflow-hidden scroll-mt-24 py-14 md:scroll-mt-28 md:py-28">
       <div className="mx-auto max-w-[1250px] px-5 sm:px-6">
         
         {/* Header */}

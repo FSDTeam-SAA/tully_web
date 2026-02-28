@@ -20,7 +20,7 @@ export default function StudentsGain() {
   ]
 
   return (
-    <section id="students-gain" className="scroll-mt-24 overflow-hidden bg-white pb-16 md:scroll-mt-28 md:pb-16 dark:bg-[#0e1521]">
+    <section id="students-gain" className="tully-bg-section scroll-mt-24 overflow-hidden pb-16 md:scroll-mt-28 md:pb-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div

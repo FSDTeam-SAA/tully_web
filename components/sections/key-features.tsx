@@ -39,7 +39,7 @@ export default function KeyFeatures() {
   ]
 
   return (
-    <section id="features" className="scroll-mt-24 bg-[#f8f4ed] py-16 md:scroll-mt-28 md:py-24 dark:bg-[#111a27]">
+    <section id="features" className="tully-bg-alt-a scroll-mt-24 py-16 md:scroll-mt-28 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -10 }}

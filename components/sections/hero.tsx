@@ -33,7 +33,7 @@ export default function Hero() {
   ]
 
   return (
-    <section id="home" className="relative overflow-hidden bg-[#f8f4ed] pt-24 md:pt-28 lg:pt-32 dark:bg-[#111a27]">
+    <section id="home" className="tully-bg-alt-a relative overflow-hidden pt-24 md:pt-28 lg:pt-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-8 pb-4 md:grid-cols-[1.1fr_0.9fr] md:pb-0 lg:gap-12">
           <motion.div
@@ -103,7 +103,7 @@ export default function Hero() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 0.6 }}
-        className="relative z-20 bg-[#f3e6d8] dark:bg-[linear-gradient(90deg,#1a273a_0%,#1c2d45_50%,#1a273a_100%)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_-1px_0_rgba(255,255,255,0.03)]"
+        className="tully-bg-band relative z-20 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_-1px_0_rgba(255,255,255,0.03)]"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
