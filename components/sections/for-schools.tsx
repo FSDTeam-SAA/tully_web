@@ -14,7 +14,7 @@ export default function ForSchools() {
   ]
 
   return (
-    <section id="schools" className="tully-bg-alt-a scroll-mt-24 overflow-hidden py-16 md:scroll-mt-28 md:py-24">
+    <section id="schools" className="tully-bg-alt-a scroll-mt-24 overflow-hidden pb-16 pt-32 md:scroll-mt-28 md:pb-24 md:pt-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Simplified 50/50 Grid */}
         <div className="grid items-center gap-8 md:grid-cols-2">
@@ -78,7 +78,7 @@ export default function ForSchools() {
             */}
             <div className="relative z-10 w-full aspect-[4/3] md:scale-110 lg:scale-125 md:translate-x-8 ">
               <Image
-                src="/images/for_schools.png"
+                src="/images/shcools.png"
                 alt="Happy student holding phone with Tully app"
                 fill
                 priority

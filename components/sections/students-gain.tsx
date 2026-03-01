@@ -20,14 +20,14 @@ export default function StudentsGain() {
   ]
 
   return (
-    <section id="students-gain" className="tully-bg-section scroll-mt-24 overflow-hidden pb-16 md:scroll-mt-28 md:pb-16">
+    <section id="students-gain" className="tully-bg-section scroll-mt-24 overflow-hidden pb-28 md:scroll-mt-28 md:pb-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 md:mb-24 text-center"
+          className="my-16 md:my-24 text-center"
         >
           <h2 className="tully-section-title text-[#2f3f5c] dark:text-[#e2eaf7]">
             What students gain
