@@ -65,10 +65,10 @@ export default function WhyTullyDifferent() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45 }}
             whileHover={{ y: -4 }}
-            className="relative overflow-hidden rounded-[28px] border border-[#f0c4bb] bg-[linear-gradient(180deg,rgba(255,250,247,0.98)_0%,rgba(255,243,239,0.98)_100%)] p-6 shadow-[0_18px_40px_rgba(163,75,39,0.08)] dark:border-[#4a3136] dark:bg-[#2a1e25]"
+            className="relative overflow-hidden rounded-[28px] border border-[#f0c4bb] bg-[linear-gradient(180deg,rgba(255,250,247,0.98)_0%,rgba(255,243,239,0.98)_100%)] p-6 shadow-[0_18px_40px_rgba(163,75,39,0.08)] dark:border-[#69454d] dark:bg-[linear-gradient(180deg,rgba(52,31,40,0.98)_0%,rgba(33,20,27,0.98)_100%)] dark:shadow-[0_24px_52px_rgba(2,6,23,0.34)]"
           >
             <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#f59e0b_0%,#ef4444_100%)]" />
-            <h3 className="mb-5 text-xl font-semibold text-[#3b4658] dark:text-[#e3eaf7]">Without Tully</h3>
+            <h3 className="mb-5 text-xl font-semibold text-[#3b4658] dark:text-[#f3f6ff]">Without Tully</h3>
             <motion.ul
               variants={listVariants}
               initial="hidden"
@@ -80,9 +80,9 @@ export default function WhyTullyDifferent() {
                 <motion.li
                   key={item}
                   variants={itemVariants}
-                  className="flex items-start gap-3 text-base leading-relaxed text-[#5f6c82] md:text-lg dark:text-[#b3bed1]"
+                  className="flex items-start gap-3 text-base leading-relaxed text-[#5f6c82] md:text-lg dark:text-[#dde5f4]"
                 >
-                  <XCircle className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#e25e5e]" />
+                  <XCircle className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#e25e5e] dark:text-[#ff8b8b]" />
                   <span className="font-bold italic">{item}</span>
                 </motion.li>
               ))}
@@ -95,10 +95,10 @@ export default function WhyTullyDifferent() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45, delay: 0.05 }}
             whileHover={{ y: -4 }}
-            className="relative overflow-hidden rounded-[28px] border border-[#cfe4bf] bg-[linear-gradient(180deg,rgba(251,255,247,0.98)_0%,rgba(243,252,235,0.98)_100%)] p-6 shadow-[0_18px_40px_rgba(56,129,64,0.08)] dark:border-[#355243] dark:bg-[#1f2c29]"
+            className="relative overflow-hidden rounded-[28px] border border-[#cfe4bf] bg-[linear-gradient(180deg,rgba(251,255,247,0.98)_0%,rgba(243,252,235,0.98)_100%)] p-6 shadow-[0_18px_40px_rgba(56,129,64,0.08)] dark:border-[#436452] dark:bg-[linear-gradient(180deg,rgba(31,51,43,0.98)_0%,rgba(20,32,28,0.98)_100%)] dark:shadow-[0_24px_52px_rgba(2,6,23,0.34)]"
           >
             <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#22c55e_0%,#84cc16_100%)]" />
-            <h3 className="mb-5 text-xl font-semibold text-[#3b4658] dark:text-[#e3eaf7]">With Tully</h3>
+            <h3 className="mb-5 text-xl font-semibold text-[#3b4658] dark:text-[#f3f6ff]">With Tully</h3>
             <motion.ul
               variants={listVariants}
               initial="hidden"
@@ -110,9 +110,9 @@ export default function WhyTullyDifferent() {
                 <motion.li
                   key={item}
                   variants={itemVariants}
-                  className="flex items-start gap-3 text-base leading-relaxed text-[#5f6c82] md:text-lg dark:text-[#b3bed1]"
+                  className="flex items-start gap-3 text-base leading-relaxed text-[#5f6c82] md:text-lg dark:text-[#dde5f4]"
                 >
-                  <CheckCircle2 className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#42a43a]" />
+                  <CheckCircle2 className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#42a43a] dark:text-[#7fe089]" />
                   <span className="font-bold italic">{item}</span>
                 </motion.li>
               ))}
