@@ -54,7 +54,7 @@ export default function SecurityEthics() {
             {/* Top Left */}
             <div className="flex items-center justify-center md:justify-end gap-6">
               <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-right lg:text-base dark:text-[#a8b7cd]">
-                AI supports planning never<br className="hidden md:block" /> completes academic work
+                AI supports planning never  completes academic work
               </p>
               {/* Connector Container */}
               <div className="hidden md:block relative w-24 lg:w-32">
@@ -69,7 +69,7 @@ export default function SecurityEthics() {
             {/* Bottom Left */}
             <div className="flex items-center justify-center md:justify-end gap-6">
               <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-right lg:text-base dark:text-[#a8b7cd]">
-                Designed to align with<br className="hidden md:block" /> educational integrity standards
+                Designed to align with  educational integrity standards
               </p>
               <div className="hidden md:block relative w-24 lg:w-32">
                 <div className="relative h-[2px] w-full" style={{ backgroundColor: brandColor }}>
@@ -107,7 +107,7 @@ export default function SecurityEthics() {
                 </div>
               </div>
               <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-left lg:text-base dark:text-[#a8b7cd]">
-                Student data is encrypted and<br className="hidden md:block" /> protected
+                Student data is encrypted and  protected
               </p>
             </div>
 
@@ -121,7 +121,7 @@ export default function SecurityEthics() {
                 </div>
               </div>
               <p className="z-10 text-center text-sm font-medium leading-relaxed text-[#68778D] md:text-left lg:text-base dark:text-[#a8b7cd]">
-                No selling or sharing of<br className="hidden md:block" /> student data
+                No selling or sharing of  student data
               </p>
             </div>
           </div>
