@@ -59,7 +59,7 @@ export default function ForSchools() {
               <Button 
                 className="rounded-md px-7 py-3 text-base font-semibold text-white"
               >
-                Join waitlist
+                Coming soon
               </Button>
             </div>
           </motion.div>
