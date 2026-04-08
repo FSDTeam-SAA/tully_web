@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Box, ShieldCheck, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { APP_STORE_URL } from '@/lib/constants'
 
 export default function Hero() {
   const containerVariants = {
@@ -64,7 +65,9 @@ export default function Hero() {
               className="flex flex-col justify-center gap-4 pt-1 pb-6 sm:flex-row md:justify-start"
             >
               <Button asChild className="rounded-md px-8 py-6 text-lg font-semibold text-white">
-                <a href="#ready-to-plan">Download the app</a>
+                <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+                  Download on the App Store
+                </a>
               </Button>
               <Button
                 asChild

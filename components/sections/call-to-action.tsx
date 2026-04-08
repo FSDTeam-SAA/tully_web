@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { APP_STORE_URL } from '@/lib/constants'
 
 export default function CallToAction() {
   return (
@@ -25,7 +26,9 @@ export default function CallToAction() {
             variant="outline"
             className="mt-7 rounded-md border-primary/40 bg-card px-8 py-3 text-base font-semibold text-primary hover:bg-card/80 dark:border-[#3a4b63] dark:bg-[#162233] dark:text-[#f8b03d] dark:hover:bg-[#1f2d41]"
           >
-            <a href="#home">Get Early Access</a>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              Download on the App Store
+            </a>
           </Button>
         </motion.div>
       </div>

@@ -6,11 +6,10 @@ import { Button } from '@/components/ui/button'
 
 export default function ForSchools() {
   const benefits = [
-    'Branded app with your logo and school colors',
-    'Central dashboard for teachers and counselors',
-    'Student planning insights (privacy-safe)',
-    'Role-based access for support staff',
-    'Easy onboarding for students',
+    'Simple onboarding for students',
+    'A practical planning tool students can use every day',
+    'Helpful visibility for teachers and counselors',
+    'Supports stronger routines and follow-through',
   ]
 
   return (
@@ -39,11 +38,11 @@ export default function ForSchools() {
 
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-[#334155] md:text-2xl dark:text-[#dfe8f5]">
-                What schools get with Tully:
+                How schools can use Tully:
               </h3>
               <p className="max-w-lg text-sm leading-relaxed text-[#64748b] md:text-base dark:text-[#a8b7cd]">
-                Students often struggle with planning, not intelligence. Tully helps
-                them build structure, consistency, and responsibility.
+                Tully gives students a simple way to plan their work and helps staff
+                reinforce better habits without adding another complicated system.
               </p>
               
               <ul className="space-y-3 mt-4">

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu, Moon, Sun } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { APP_STORE_URL } from '@/lib/constants'
 import { useEffect, useState, type MouseEvent } from 'react'
 import { useTheme } from 'next-themes'
 
@@ -129,7 +130,9 @@ export default function Header() {
             {mounted && isDark ? <Sun className="h-[18px] w-[18px]" /> : <Moon className="h-[18px] w-[18px]" />}
           </button>
           <Button asChild className="rounded-md px-6 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md">
-            <a href="#ready-to-plan" onClick={handleAnchorClick('#ready-to-plan')}>Download</a>
+            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+              Download
+            </a>
           </Button>
         </motion.div>
 
@@ -192,7 +195,9 @@ export default function Header() {
             <div className="mt-8">
               <SheetClose asChild>
                 <Button asChild className="w-full rounded-md px-4 py-2.5 text-sm font-semibold text-white">
-                  <a href="#ready-to-plan" onClick={handleAnchorClick('#ready-to-plan')}>Download</a>
+                  <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+                    Download
+                  </a>
                 </Button>
               </SheetClose>
             </div>
